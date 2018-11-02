@@ -40,7 +40,7 @@ bot.on('message', async message => {
 
 //creer le salon report-ban-kick
 
-    message.guild.createChannel("lreport-ban-kick", "text", [
+    message.guild.createChannel("report-ban-kick", "text", [
         {
           id: message.guild.id,
           deny: ["SEND_MESSAGES", "ADD_REACTIONS"],
