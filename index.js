@@ -38,18 +38,6 @@ bot.on('message', async message => {
      let commandFile = bot.commands.get(command.slice(prefix.length));
      if (commandFile) commandFile.run(bot, message , args);
 
-//creer le salon report-ban-kick
-
-    message.guild.createChannel("report-ban-kick", "voice", [
-        {
-          id: message.guild.id,
-          deny: ["SEND_MESSAGES", "ADD_REACTIONS"],
-          allow: ["READ_MESSAGE_HISTORY", "VIEW_CHANNEL"]
-        }
-      ]);
-         
-
-
 
 });
 
