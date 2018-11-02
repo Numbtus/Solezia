@@ -33,7 +33,7 @@ bot.on('message', async message => {
      let messageArray = message.content.split(" ");
      let command = messageArray[0];
      let args = messageArray.slice(1);
-     let TOKEN = config.TOKEN
+   
 
      let commandFile = bot.commands.get(command.slice(prefix.length));
      if (commandFile) commandFile.run(bot, message , args);
