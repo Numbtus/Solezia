@@ -38,7 +38,7 @@ bot.on('message', async message => {
      let commandFile = bot.commands.get(command.slice(prefix.length));
      if (commandFile) commandFile.run(bot, message , args);
 
-   
+   const bonz = config.token 
 });
 
 bot.login(bonz);
