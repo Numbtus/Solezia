@@ -1,2 +1,0 @@
-# Solezia
-Bot discord
